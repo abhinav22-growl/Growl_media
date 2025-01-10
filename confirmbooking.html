@@ -1,8 +1,9 @@
- <!DOCTYPE html>
+
+<!DOCTYPE html>
 <html>
 <head>
 
-  <link rel="icon" type="image/png" href="assets/Fabicon.png">
+  
   <meta name="viewport" content="width=1440">
   <style>
     * {
@@ -56,6 +57,7 @@
       padding: 20px;
       background: #f8f9fa;
       border-radius: 8px;
+      flex-wrap: wrap;
     }
 
     .meeting-item {
@@ -63,6 +65,8 @@
       align-items: center;
       gap: 8px;
       color: #4a5568;
+      font-size: 14px;
+      flex: 1;
     }
 
     .form-group {
@@ -72,10 +76,12 @@
     .date-time-group {
       display: flex;
       gap: 16px;
+      flex-wrap: wrap;
     }
 
     .date-time-group .form-group {
       flex: 1;
+      min-width: 150px;
     }
 
     label {
@@ -114,7 +120,8 @@
 
     .radio-group {
       display: flex;
-      gap: 24px;
+      gap: 16px;
+      flex-wrap: wrap;
       margin-top: 8px;
     }
 
@@ -135,6 +142,7 @@
       display: flex;
       gap: 16px;
       margin-top: 40px;
+      justify-content: center;
     }
 
     .btn-book {
@@ -155,6 +163,22 @@
     }
 
     @media (max-width: 640px) {
+      body {
+        padding: 10px;
+      }
+
+      .form-container {
+        padding: 20px;
+      }
+
+      h1 {
+        font-size: 24px;
+      }
+
+      h2 {
+        font-size: 16px;
+      }
+
       .meeting-details {
         flex-direction: column;
         gap: 16px;
@@ -162,7 +186,12 @@
 
       .date-time-group {
         flex-direction: column;
-        gap: 24px;
+        gap: 16px;
+      }
+
+      .button-container {
+        flex-direction: column;
+        gap: 12px;
       }
     }
   </style>
