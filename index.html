@@ -438,7 +438,7 @@
                 const message = document.getElementById('message').value;
                 
                 // Validation
-                const phoneRegex = /^[\+]?[(]?[0-9]{3}[)]?[-\s\.]?[0-9]{3}[-\s\.]?[0-9]{4}$/;
+                const phoneRegex = /^[\+]?[\d\W]+$/;
                 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
                 
                 if (name.length < 2) {
